@@ -32,6 +32,7 @@ A guide compiling information to easily create custom skill sets for characters 
 
 <br/><br/>
 **(4)** Navigate the newly extracted pak folder *'...\SkillsUnedited_P\Octopath_Traveler0\Content\Local\DataBase\SkillBoard'* and copy **SkillBoardData.uasset** & **SkillBoardData.uexp** into the **UAssetMessagePack** folder.
+<br/><br/>
 
 **(5)** Open *cmd* in the **UAssetMessagePack** directory and input the following command: *UAssetMessagePack.exe tojson SkillBoardData.uasset SkillBoardData.json VER_UE5_4 "YourMappingDirectoryHere\Mappings.usmap"*. Make sure to write your actual directory. You can obtain this by clicking on the directory bar of your Mapping File to copy the directory.
 
@@ -53,6 +54,7 @@ __For example__: if you want the "Almighty" buff skill (Phys atk/Phys def/Elem a
 
 <img width="1154" height="604" alt="3" src="https://github.com/user-attachments/assets/5f3be80d-831b-4e70-926b-e6a91502d020" />
 <br/><br/>
+
 *Note*: the voice line associated for the original skill will still play the same audio, regardless if it is changed to something else, silimar to OT2. This requires seperate modding that can be discussed in the Discord server.
 <br/><br/>
 
