@@ -12,9 +12,10 @@ A guide compiling information to easily create custom skill sets for characters 
 * [Octopath 0 Spreadsheet](https://docs.google.com/spreadsheets/d/1yCGuadxkicFMeCBzncOI5o1wlfeRk4KPxpHM4aZa7VE/edit?gid=0#gid=0)
 * Any text editor, such as Notepad++
 
-**Example**:
+**Examples**:
 
 <img width="351" height="312" alt="image" src="https://github.com/user-attachments/assets/cecb0642-e993-4f8a-a568-f6f031859058" />
+<img width="342" height="312" alt="preview2" src="https://github.com/user-attachments/assets/65ee9292-e9e1-4b3d-a57f-41d913fdc3c8" />
 
 
 ## Setup:
@@ -96,7 +97,7 @@ __For example__: if you want the "Almighty" buff skill (Phys atk/Phys def/Elem a
 
 **Note**: This list is not finished and can be updated overtime. An easy way to find a missing id is to cross reference *m_CanNotEssential* data with the OT0 spreadsheet. 
 
-**For example**: Suppose Hannit is not yet listed. Hannit's *m_CanNotEssential* ("Unmasterable") True and False values follows FTFFFFF (skills), FTTT (passives), as seen in the OT0 spreadsheet. We can see in the list above Olberic's character id is 2031 and there are missing entries. Therefore it's likely Hannit and the original 8 is after him. Search for a pattern FTFFFFF, FTTT in the JSON and we discover id 2035 matches this pattern. After repacking and loading the game, this is confirmed to be Hannit. Note that this method is not foolproof, as for example Stia and Primrose follow the same mastery pattern of FFFFFFT, FTTT and can be accidentally confused for one another.
+**For example**: Suppose Hannit is not yet listed. Hannit's *m_CanNotEssential* ("Unmasterable") True and False values follows FTFFFFF (skills), FTTT (passives), as seen in the OT0 spreadsheet. We can see in the list above Olberic's character id is 2031 and there are missing entries after him. Therefore we can infer Hannit and the original 8 occupy these spots. Search for a pattern FTFFFFF, FTTT in the JSON and we discover id 2035 matches this pattern. After repacking and loading the game, this is confirmed to be Hannit. Note that this method is not foolproof, as for example Stia and Primrose follow the same mastery pattern of FFFFFFT, FTTT and can be accidentally confused for one another.
 <br/><br/>
 
 ## Repacking:
