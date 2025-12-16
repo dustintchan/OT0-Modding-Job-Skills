@@ -96,7 +96,7 @@ __For example__: if you want the "Almighty" buff skill (Phys atk/Phys def/Elem a
 
 **Note**: This list is not finished and can be updated overtime. An easy way to find a missing id is to cross reference *m_CanNotEssential* data with the OT0 spreadsheet. 
 
-**For example**: Suppose Hannit is not yet listed. Hannit's *m_CanNotEssential* True and False values follows FTFFFFF (skills), FTTT (passives). We can see in the list above Olberic's character id is 2031 and therefore a liklihood Hannit is after him. Search for a pattern FTFFFFF, FTTT in the JSON and we discover id 2035 matches this pattern. After repacking and loading the game, this is confirmed to be Hannit. Note that this method is not foolproof, as for example Stia and Primrose follow the same mastery pattern of FFFFFFT, FTTT and can be accidentally confused for one another.
+**For example**: Suppose Hannit is not yet listed. Hannit's *m_CanNotEssential* ("Unmasterable") True and False values follows FTFFFFF (skills), FTTT (passives), as seen in the OT0 spreadsheet. We can see in the list above Olberic's character id is 2031 and there are missing entries. Therefore it's likely Hannit and the original 8 is after him. Search for a pattern FTFFFFF, FTTT in the JSON and we discover id 2035 matches this pattern. After repacking and loading the game, this is confirmed to be Hannit. Note that this method is not foolproof, as for example Stia and Primrose follow the same mastery pattern of FFFFFFT, FTTT and can be accidentally confused for one another.
 <br/><br/>
 
 ## Repacking:
@@ -117,7 +117,7 @@ __For example__: if you want the "Almighty" buff skill (Phys atk/Phys def/Elem a
 
 ## Side section: Unpacking pakchunk0-Windows.pak
 
-If you wish to use the full game directory instead of the simplified .pak for other modifications, use the following *cmd* command for **repak**, as detailed on the Discord: **repak.exe --aes-key='0x14A2B6A734EE06B2B011E847AFFCD1DB9CB46C049B1AA5E3F44CCFE332EF6CDA' unpack --output '.\Dumps' 'C:\Program Files (x86)\Steam\steamapps\common\Octopath_Traveler0\Octopath_Traveler0\Content\Paks\pakchunk0-Windows.pak'**. Adjust the directory as needed.
+If you wish to use the full game directory instead of the simplified .pak for other modifications, use the following *cmd* command for **repak** while **pakchunk0-Windows.pak** is in the same directory: **repak.exe --aes-key='0x14A2B6A734EE06B2B011E847AFFCD1DB9CB46C049B1AA5E3F44CCFE332EF6CDA' unpack --output '.\Dumps' 'C:\Program Files (x86)\Steam\steamapps\common\Octopath_Traveler0\Octopath_Traveler0\Content\Paks\pakchunk0-Windows.pak'**. Adjust the directory as needed.
 
 If this command does not work, try using the following command: **repak.exe --aes-key 0x14A2B6A734EE06B2B011E847AFFCD1DB9CB46C049B1AA5E3F44CCFE332EF6CDA unpack pakchunk0-Windows.pak**.
 
