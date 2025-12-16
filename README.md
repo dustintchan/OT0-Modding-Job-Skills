@@ -18,7 +18,7 @@ A guide compiling information to easily create custom skill sets for characters 
 
 
 ## Setup:
-**(1)** Download the 3 tools above and extract their files above into seperate folders, in a modding directory of your choosing. Download the two files above from this repository.
+**(1)** Download the 3 tools above and extract their files into seperate folders, in a modding directory of your choosing. Download the two files above from this repository.
 
 **(2)** Create another folder of any name and place **Mappings.usmap** file inside it. (I.e directory: ...\Octopath 0 Modding\Tools\Mapping File\Mappings.usmap).
 <br/><br/>
@@ -56,10 +56,10 @@ __For example__: if you want the "Almighty" buff skill (Phys atk/Phys def/Elem a
 <img width="1154" height="604" alt="3" src="https://github.com/user-attachments/assets/5f3be80d-831b-4e70-926b-e6a91502d020" />
 <br/><br/>
 
-*Note*: the voice line associated for the original skill will still play the same audio, regardless if it is changed to something else, silimar to OT2. This requires seperate modding that can be discussed in the Discord server.
+**Note**: the voice line associated for the original skill will still play the same audio, regardless if it is changed to something else, silimar to OT2 (i.e the protagonist will say "Cross Slash!" or "What a nice breeze!" independant of what skill occupies the slot). This requires seperate modding that can be discussed in the Discord server.
 <br/><br/>
 
-**(Special thanks to @Kermit for these id documentations)**:
+**(Special thanks to @Kermit for the initial id documentations)**:
 
 * 901 - warrior
 * 902 - apothecary
@@ -94,7 +94,7 @@ __For example__: if you want the "Almighty" buff skill (Phys atk/Phys def/Elem a
 * 2046 - Stia
 * 2047 - Sazantos
 
-*Note*: This list is not finished and can be updated overtime. An easy way to find a missing id is to cross reference *m_CanNotEssential* data with the OT0 spreadsheet. 
+**Note**: This list is not finished and can be updated overtime. An easy way to find a missing id is to cross reference *m_CanNotEssential* data with the OT0 spreadsheet. 
 
 **For example**: Suppose Hannit is not yet listed. Hannit's *m_CanNotEssential* True and False values follows FTFFFFF (skills), FTTT (passives). We can see in the list above Olberic's character id is 2031 and therefore a liklihood Hannit is after him. Search for a pattern FTFFFFF, FTTT in the JSON and we discover id 2035 matches this pattern. After repacking and loading the game, this is confirmed to be Hannit. Note that this method is not foolproof, as for example Stia and Primrose follow the same mastery pattern of FFFFFFT, FTTT and can be accidentally confused for one another.
 <br/><br/>
