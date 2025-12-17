@@ -9,13 +9,16 @@ A guide compiling information to easily create custom skill sets for characters 
 * [UnrealPak](https://github.com/Dmgvol/UE_Modding/raw/main/Tools/UnrealPak.zip) by FluffyQuack (Repack Uassets) 
 * **SkillsUnedited_P.pak** (Provided file)
 * **Mappings.usmap** (Provided file)
+* **SkillID.json** (Provided file)
+* **GameTextSkill.json** (Provided file)
 * [Octopath 0 Spreadsheet](https://docs.google.com/spreadsheets/d/1yCGuadxkicFMeCBzncOI5o1wlfeRk4KPxpHM4aZa7VE/edit?gid=0#gid=0)
 * Any text editor, such as Notepad++
 
 **Examples**:
 
 <img width="351" height="312" alt="image" src="https://github.com/user-attachments/assets/cecb0642-e993-4f8a-a568-f6f031859058" />
-<img width="342" height="312" alt="preview2" src="https://github.com/user-attachments/assets/65ee9292-e9e1-4b3d-a57f-41d913fdc3c8" />
+<img width="502" height="312" alt="image" src="https://github.com/user-attachments/assets/5b71fe69-3ec8-463e-95bc-3dad0b26cd00" />
+
 
 
 ## Setup:
@@ -45,7 +48,7 @@ A guide compiling information to easily create custom skill sets for characters 
 <br/><br/>
 ## Editing the Skills:
 
-**(6)** Open the resulting **SkillBoardData.json** with any text editor and make your desired changes. This is where you edit protagonist jobs and character's skillsets. Search for the *m_id* of the job or character you want to edit (see below). *m_SkillID* has 7 codes for learnable skills and *m_SupportSkillID* for the 4 job passives. *m_CanNotSupport* controls whether skill can be mastered or not using JP. It is possible to add more than 7 skills and 4 passives (currently unknown consequences). You can also make all character's skills learnable if you desired.
+**(6)** Open the resulting **SkillBoardData.json** with any text editor and make your desired changes. This is where you edit protagonist jobs and character's skillsets. Search for the *m_id* of the job or character you want to edit (see below). Each job and character has their own *m_id*. *m_SkillID* has 7 codes for learnable skills and *m_SupportSkillID* for the 4 job passives. *m_CanNotSupport* controls whether skill can be mastered or not using JP. It is possible to add more than 7 skills and 4 passives (currently unknown consequences). You can also make all character's skills learnable if you desired.
 
 Use the OT0 Spreadsheet as a reference. The order of skills there matches the order of skills found in the json for each individual character.
 https://docs.google.com/spreadsheets/d/1yCGuadxkicFMeCBzncOI5o1wlfeRk4KPxpHM4aZa7VE/edit?gid=0#gid=0
@@ -60,7 +63,7 @@ __For example__: if you want the "Almighty" buff skill (Phys atk/Phys def/Elem a
 **Note**: the voice line associated for the original skill will still play the same audio, regardless if it is changed to something else, silimar to OT2 (i.e the protagonist will say "Cross Slash!" or "What a nice breeze!" independant of what skill occupies the slot). This requires seperate modding that can be discussed in the Discord server.
 <br/><br/>
 
-**(Special thanks to @Kermit for the initial id documentations)**:
+**(Special thanks to @Kermit for the initial id documentations, and @Naro for further contributions)**:
 
 * 901 - warrior
 * 902 - apothecary
@@ -87,17 +90,43 @@ __For example__: if you want the "Almighty" buff skill (Phys atk/Phys def/Elem a
 * 2029 - goodwin
 * 2030 - Saoirse
 * 2031 - Olberic
+* 2032 - Tressa
 * 2035 - Hannit
+* 2036 - Ophelia
+* 2037 - Cyrus
 * 2038 - Primrose
+* 2040 - Alaune
+* 2042 - Solon
 * 2043 - Eltrix
 * 2044 - Rondo
 * 2045 - Tatloch
 * 2046 - Stia
 * 2047 - Sazantos
+* 2049 - Isla
 
 **Note**: This list is not finished and can be updated overtime. An easy way to find a missing id is to cross reference *m_CanNotEssential* data with the OT0 spreadsheet. 
 
 **For example**: Suppose Hannit is not yet listed. Hannit's *m_CanNotEssential* ("Unmasterable") True and False values follows FTFFFFF (skills), FTTT (passives), as seen in the OT0 spreadsheet. We can see in the list above Olberic's character id is 2031 and there are missing entries after him. Therefore we can infer Hannit and the original 8 occupy these spots. Search for a pattern FTFFFFF, FTTT in the JSON and we discover id 2035 matches this pattern. After repacking and loading the game, this is confirmed to be Hannit. Note that this method is not foolproof, as for example Stia and Primrose follow the same mastery pattern of FFFFFFT, FTTT and can be accidentally confused for one another.
+<br/><br/>
+
+## Using non-character or job specific skills (Mastery Skills):
+
+This section discusses how to find the *m_SkillID* of skills not learned by any character's classes. 
+You will need **SkillBoardData.json**, **SkillID.json**, and **GameTextSkill.json** opened within your text editor. Use the OT0 spreadsheet to find the skill you desire under *Mastery Skills* tab and note its name.
+
+**For example**:  We will add the skill "Swirling Storm" (26 SP Deal wind damage to random foes 4 times) to our skillset, which is not innately learned by any character.
+
+Cntrl-f in **GameTextSkill.json** and input your skill name (i.e Swirling Storm) and search. Right above your desired skill's name is its corresponding *m_id*.
+
+<img width="322" height="147" alt="image" src="https://github.com/user-attachments/assets/8564e713-e498-4b8f-a09f-f4796d838d81" />
+<br/><br/>
+
+Copy this id and Cntrl-f in **SkillID.json**, then paste the skill name id (i.e 153745) and search. Above the resulting search is the skill id we want.
+
+<img width="374" height="167" alt="image" src="https://github.com/user-attachments/assets/8e224b45-069f-466b-a353-42007b8dc5ce" />
+<br/><br/>
+
+Copy this id to use within **SkillBoardData.json**, placing it onto your character's skillset as previously mentioned. You're done!
 <br/><br/>
 
 ## Repacking:
@@ -127,4 +156,5 @@ If this command does not work, try using the following command: **repak.exe --ae
 
 ## Special Thanks to the OT0 Modding Discord:
 *  @igoticecream - Pioneer into OT0 modding and integeral UAssetMessagePack tool developer.
-*  @Kermit - For their early documentation of character/job ids and process clarifications.
+*  @Kermit - For their early documentations of character/job ids and massive contributions towards understanding all the necessary files to edit skills.
+*  @Naro - For further contributions to the character id list.
