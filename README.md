@@ -152,7 +152,13 @@ I̶f̶ ̶y̶o̶u̶ ̶w̶i̶s̶h̶ ̶t̶o̶ ̶u̶s̶e̶ ̶t̶h̶e̶ ̶f̶u̶l̶l�
 ̶I̶f̶ ̶t̶h̶i̶s̶ ̶c̶o̶m̶m̶a̶n̶d̶ ̶d̶o̶e̶s̶ ̶n̶o̶t̶ ̶w̶o̶r̶k̶,̶ ̶t̶r̶y̶ ̶u̶s̶i̶n̶g̶ ̶t̶h̶e̶ ̶f̶o̶l̶l̶o̶w̶i̶n̶g̶ ̶c̶o̶m̶m̶a̶n̶d̶:̶ ̶*̶*̶r̶e̶p̶a̶k̶.̶e̶x̶e̶ ̶-̶-̶a̶e̶s̶-̶k̶e̶y̶ ̶0̶x̶1̶4̶A̶2̶B̶6̶A̶7̶3̶4̶E̶E̶0̶6̶B̶2̶B̶0̶1̶1̶E̶8̶4̶7̶A̶F̶F̶C̶D̶1̶D̶B̶9̶C̶B̶4̶6̶C̶0̶4̶9̶B̶1̶A̶A̶5̶E̶3̶F̶4̶4̶C̶C̶F̶E̶3̶3̶2̶E̶F̶6̶C̶D̶A̶ ̶u̶n̶p̶a̶c̶k̶ ̶p̶a̶k̶c̶h̶u̶n̶k̶0̶-̶W̶i̶n̶d̶o̶w̶s̶.̶p̶a̶k̶*̶*̶.̶
 <br/><br/>
 
-**Note**: this process takes too long to unpack. It is recommended to use the **FModel** tool.
+**Note**: this process takes too long to unpack. It is recommended to use the **FModel** tool instead.
+<br/><br/>
+
+Here are the following directories where the UAsset files within this repo can be found:
+* **SkillBoardData** -  Octopath_Traveler0\Content\Local\DataBase\SkillBoard
+* **SkillID** - Octopath_Traveler0\Content\Local\DataBase\Skill
+* **GameTextSkill** - Octopath_Traveler0\Content\Local\DataBase\GameText\Localize\EN-US\SystemText
 <br/><br/>
 
 ## Special Thanks to the OT0 Modding Discord:
