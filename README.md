@@ -17,12 +17,12 @@ A guide compiling information to easily create custom skill sets for characters 
 **Examples**:
 
 <img width="351" height="312" alt="image" src="https://github.com/user-attachments/assets/cecb0642-e993-4f8a-a568-f6f031859058" />
-<img width="502" height="312" alt="image" src="https://github.com/user-attachments/assets/5b71fe69-3ec8-463e-95bc-3dad0b26cd00" />
+<img width="402" height="312" alt="image" src="https://github.com/user-attachments/assets/5b71fe69-3ec8-463e-95bc-3dad0b26cd00" />
 
 
 
 ## Setup:
-**(1)** Download the 3 tools above and extract their files into seperate folders, in a modding directory of your choosing. Download the two files above from this repository.
+**(1)** Download the 3 tools above and extract their files into seperate folders, in a modding directory of your choosing. Download all files from this repository.
 
 **(2)** Create another folder of any name and place **Mappings.usmap** file inside it. (I.e directory: ...\Octopath 0 Modding\Tools\Mapping File\Mappings.usmap).
 <br/><br/>
@@ -147,11 +147,12 @@ Copy this id to use within **SkillBoardData.json**, placing it onto your charact
 
 ## Side section: Unpacking pakchunk0-Windows.pak
 
-If you wish to use the full game directory instead of the simplified .pak for other modifications, use the following *cmd* command for **repak** while **pakchunk0-Windows.pak** is in the same directory: **repak.exe --aes-key='0x14A2B6A734EE06B2B011E847AFFCD1DB9CB46C049B1AA5E3F44CCFE332EF6CDA' unpack --output '.\Dumps' 'C:\Program Files (x86)\Steam\steamapps\common\Octopath_Traveler0\Octopath_Traveler0\Content\Paks\pakchunk0-Windows.pak'**. Adjust the directory as needed.
+I̶f̶ ̶y̶o̶u̶ ̶w̶i̶s̶h̶ ̶t̶o̶ ̶u̶s̶e̶ ̶t̶h̶e̶ ̶f̶u̶l̶l̶ ̶g̶a̶m̶e̶ ̶d̶i̶r̶e̶c̶t̶o̶r̶y̶ ̶i̶n̶s̶t̶e̶a̶d̶ ̶o̶f̶ ̶t̶h̶e̶ ̶s̶i̶m̶p̶l̶i̶f̶i̶e̶d̶ ̶.̶p̶a̶k̶ ̶f̶o̶r̶ ̶o̶t̶h̶e̶r̶ ̶m̶o̶d̶i̶f̶i̶c̶a̶t̶i̶o̶n̶s̶,̶ ̶u̶s̶e̶ ̶t̶h̶e̶ ̶f̶o̶l̶l̶o̶w̶i̶n̶g̶ ̶*̶c̶m̶d̶*̶ ̶c̶o̶m̶m̶a̶n̶d̶ ̶f̶o̶r̶ ̶*̶*̶r̶e̶p̶a̶k̶*̶*̶ ̶w̶h̶i̶l̶e̶ ̶*̶*̶p̶a̶k̶c̶h̶u̶n̶k̶0̶-̶W̶i̶n̶d̶o̶w̶s̶.̶p̶a̶k̶*̶*̶ ̶i̶s̶ ̶i̶n̶ ̶t̶h̶e̶ ̶s̶a̶m̶e̶ ̶d̶i̶r̶e̶c̶t̶o̶r̶y̶:̶ ̶*̶*̶r̶e̶p̶a̶k̶.̶e̶x̶e̶ ̶-̶-̶a̶e̶s̶-̶k̶e̶y̶=̶'̶0̶x̶1̶4̶A̶2̶B̶6̶A̶7̶3̶4̶E̶E̶0̶6̶B̶2̶B̶0̶1̶1̶E̶8̶4̶7̶A̶F̶F̶C̶D̶1̶D̶B̶9̶C̶B̶4̶6̶C̶0̶4̶9̶B̶1̶A̶A̶5̶E̶3̶F̶4̶4̶C̶C̶F̶E̶3̶3̶2̶E̶F̶6̶C̶D̶A̶'̶ ̶u̶n̶p̶a̶c̶k̶ ̶-̶-̶o̶u̶t̶p̶u̶t̶ ̶'̶.̶\̶D̶u̶m̶p̶s̶'̶ ̶'̶C̶:̶\̶P̶r̶o̶g̶r̶a̶m̶ ̶F̶i̶l̶e̶s̶ ̶(̶x̶8̶6̶)̶\̶S̶t̶e̶a̶m̶\̶s̶t̶e̶a̶m̶a̶p̶p̶s̶\̶c̶o̶m̶m̶o̶n̶\̶O̶c̶t̶o̶p̶a̶t̶h̶_̶T̶r̶a̶v̶e̶l̶e̶r̶0̶\̶O̶c̶t̶o̶p̶a̶t̶h̶_̶T̶r̶a̶v̶e̶l̶e̶r̶0̶\̶C̶o̶n̶t̶e̶n̶t̶\̶P̶a̶k̶s̶\̶p̶a̶k̶c̶h̶u̶n̶k̶0̶-̶W̶i̶n̶d̶o̶w̶s̶.̶p̶a̶k̶'̶*̶*̶.̶ ̶A̶d̶j̶u̶s̶t̶ ̶t̶h̶e̶ ̶d̶i̶r̶e̶c̶t̶o̶r̶y̶ ̶a̶s̶ ̶n̶e̶e̶d̶e̶d̶.̶
 
-If this command does not work, try using the following command: **repak.exe --aes-key 0x14A2B6A734EE06B2B011E847AFFCD1DB9CB46C049B1AA5E3F44CCFE332EF6CDA unpack pakchunk0-Windows.pak**.
+̶I̶f̶ ̶t̶h̶i̶s̶ ̶c̶o̶m̶m̶a̶n̶d̶ ̶d̶o̶e̶s̶ ̶n̶o̶t̶ ̶w̶o̶r̶k̶,̶ ̶t̶r̶y̶ ̶u̶s̶i̶n̶g̶ ̶t̶h̶e̶ ̶f̶o̶l̶l̶o̶w̶i̶n̶g̶ ̶c̶o̶m̶m̶a̶n̶d̶:̶ ̶*̶*̶r̶e̶p̶a̶k̶.̶e̶x̶e̶ ̶-̶-̶a̶e̶s̶-̶k̶e̶y̶ ̶0̶x̶1̶4̶A̶2̶B̶6̶A̶7̶3̶4̶E̶E̶0̶6̶B̶2̶B̶0̶1̶1̶E̶8̶4̶7̶A̶F̶F̶C̶D̶1̶D̶B̶9̶C̶B̶4̶6̶C̶0̶4̶9̶B̶1̶A̶A̶5̶E̶3̶F̶4̶4̶C̶C̶F̶E̶3̶3̶2̶E̶F̶6̶C̶D̶A̶ ̶u̶n̶p̶a̶c̶k̶ ̶p̶a̶k̶c̶h̶u̶n̶k̶0̶-̶W̶i̶n̶d̶o̶w̶s̶.̶p̶a̶k̶*̶*̶.̶
+<br/><br/>
 
-**Note**: this process may take a while to unpack.
+**Note**: this process takes too long to unpack. It is recommended to use the **FModel** tool.
 <br/><br/>
 
 ## Special Thanks to the OT0 Modding Discord:
