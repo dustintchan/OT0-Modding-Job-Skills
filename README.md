@@ -78,6 +78,7 @@ __For example__: if you want the "Almighty" buff skill (Phys atk/Phys def/Elem a
 * 2015 - Viator
 * 2016 - Reime
 * 2017 - Ludo
+* 2018 - Carinda
 * 2019 - Celsus
 * 2020 - Heidne
 * 2021 - Esperre
@@ -88,7 +89,7 @@ __For example__: if you want the "Almighty" buff skill (Phys atk/Phys def/Elem a
 * 2026 - Laurana
 * 2027 - Xerc
 * 2028 - Alexia
-* 2029 - goodwin
+* 2029 - Goodwin
 * 2030 - Saoirse
 * 2031 - Olberic
 * 2032 - Tressa
