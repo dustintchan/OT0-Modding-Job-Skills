@@ -63,7 +63,7 @@ __For example__: if you want the "Almighty" buff skill (Phys atk/Phys def/Elem a
 **Note**: the voice line associated for the original skill will still play the same audio, regardless if it is changed to something else, silimar to OT2 (i.e the protagonist will say "Cross Slash!" or "What a nice breeze!" independant of what skill occupies the slot). This requires seperate modding that can be discussed in the Discord server.
 <br/><br/>
 
-**(Special thanks to @Kermit for the initial id documentations, and @Naro for further contributions)**:
+**(Special thanks to @Kermit for the initial id documentations, and @Naro for discovering the order of characters shown in the tutorial list is the same order as they appear in SkillBoardData)**:
 
 * 901 - warrior
 * 902 - apothecary
@@ -77,7 +77,7 @@ __For example__: if you want the "Almighty" buff skill (Phys atk/Phys def/Elem a
 * 2015 - Viator
 * 2016 - Reime
 * 2017 - Ludo
-* 2019 - celsus
+* 2019 - Celsus
 * 2020 - Heidne
 * 2021 - Esperre
 * 2022 - Macy
@@ -95,13 +95,16 @@ __For example__: if you want the "Almighty" buff skill (Phys atk/Phys def/Elem a
 * 2036 - Ophelia
 * 2037 - Cyrus
 * 2038 - Primrose
+* 2039 - Bargello
 * 2040 - Alaune
+* 2041 - Richard
 * 2042 - Solon
 * 2043 - Eltrix
 * 2044 - Rondo
 * 2045 - Tatloch
 * 2046 - Stia
 * 2047 - Sazantos
+* 2048 - El
 * 2049 - Isla
 
 **Note**: This list is not finished and can be updated overtime. An easy way to find a missing id is to cross reference *m_CanNotEssential* data with the OT0 spreadsheet. 
