@@ -17,7 +17,8 @@ A guide compiling information to easily create custom skill sets for characters 
 **Examples**:
 
 <img width="351" height="312" alt="image" src="https://github.com/user-attachments/assets/cecb0642-e993-4f8a-a568-f6f031859058" />
-<img width="402" height="312" alt="image" src="https://github.com/user-attachments/assets/5b71fe69-3ec8-463e-95bc-3dad0b26cd00" />
+<img width="359" height="312" alt="preview4" src="https://github.com/user-attachments/assets/b9fa9c9b-9c0e-4ea7-ae0f-204fd1e6290b" />
+
 
 
 
