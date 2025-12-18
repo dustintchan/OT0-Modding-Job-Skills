@@ -65,14 +65,15 @@ __For example__: if you want the "Almighty" buff skill (Phys atk/Phys def/Elem a
 
 **(Special thanks to @Kermit for the initial id documentations, and @Naro for discovering the order of characters shown in the tutorial list is the same order as they appear in SkillBoardData)**:
 
-* 901 - warrior
-* 902 - apothecary
-* 903 - thief
-* 904 - scholar
-* 905 - cleric
-* 906 - hunter
-* 907 - merchant
-* 908 - dancer
+* 901 - Warrior
+* 902 - Apothecary
+* 903 - Thief
+* 904 - Scholar
+* 905 - Cleric
+* 906 - Hunter
+* 907 - Merchant
+* 908 - Dancer
+* 909 - Prologue Protagonist
 <br/><br/>
 * 2015 - Viator
 * 2016 - Reime
@@ -91,6 +92,8 @@ __For example__: if you want the "Almighty" buff skill (Phys atk/Phys def/Elem a
 * 2030 - Saoirse
 * 2031 - Olberic
 * 2032 - Tressa
+* 2033 - Therion
+* 2034 - Alfyn
 * 2035 - Hannit
 * 2036 - Ophelia
 * 2037 - Cyrus
