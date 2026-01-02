@@ -1,7 +1,7 @@
 # OT0 Editing Job Skillset Tutorial
 A guide compiling information to easily create custom skill sets for characters in Octopath 0. Includes Unpacking .pak files, .uasset into json, json to .uasset, and repacking .pak files. This guide was done with Windows OS in mind.
 
-The steps within this guide applies to the COTC OT0 mod as well. This guide will be updated when the official mod releases.
+**COTC mod**: The steps within this guide applies and can be used as a refrence for the *COTC OT0 mod by VeganPrimate* as well. However, you must extract the mod .pak and use its associated ID files instead. Location refrences to the files found within this repo can be found below.
 
 **Disclaimer**: This tutorial only handles editing class skillset and extracts a simplified .pak to ease the modding process. This guide does not include class weapon changes, sprite changes, or editing the individual skills themselves. To do other types of modding for OT0, you must unpack **pakchunk0-Windows.pak** found in your *'...\Octopath_Traveler0\Octopath_Traveler0\Content\Paks'* game directory using the AES key found in the Octopath modding Discord: https://discord.gg/t43Kbrp. More details of this can be found at the bottom of this page.
 
@@ -20,9 +20,9 @@ The steps within this guide applies to the COTC OT0 mod as well. This guide will
 
 <img width="351" height="312" alt="image" src="https://github.com/user-attachments/assets/cecb0642-e993-4f8a-a568-f6f031859058" />
 <img width="359" height="312" alt="preview4" src="https://github.com/user-attachments/assets/b9fa9c9b-9c0e-4ea7-ae0f-204fd1e6290b" />
-
-
-
+<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[Base Game]
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[COTC mod]
 
 ## Setup:
 **(1)** Download the 3 tools above and extract their files into seperate folders, in a modding directory of your choosing. Download all files from this repository.
@@ -115,9 +115,9 @@ __For example__: if you want the "Almighty" buff skill (Phys atk/Phys def/Elem a
 * 2049 - Isla
 <br/><br/>
 
-## Using non-character or job specific skills (Mastery Skills):
+## Using non-character or job specific skills (Mastery and Enemy Skills):
 
-This section discusses how to find the *m_SkillID* of skills not learned by any character's classes. It can also 
+This section discusses how to find the *m_SkillID* of skills not learned by any character's classes (though it can also be used for character specific skills).
 You will need **SkillBoardData.json**, **SkillID.json**, and **GameTextSkill.json** opened within your text editor. Use the OT0 spreadsheet to find the skill you desire under *Mastery Skills* tab and note its name.
 
 **For example**:  We will add the skill "Swirling Storm" (26 SP Deal wind damage to random foes 4 times) to our skillset, which is not innately learned by any character.
@@ -161,7 +161,7 @@ I̶f̶ ̶y̶o̶u̶ ̶w̶i̶s̶h̶ ̶t̶o̶ ̶u̶s̶e̶ ̶t̶h̶e̶ ̶f̶u̶l̶l�
 **Note**: this process takes too long to unpack. It is recommended to use the **FModel** tool instead.
 <br/><br/>
 
-Here are the following directories where the UAsset files within this repo can be found:
+Here are the following directories where the UAsset files within this repo can be found for reference:
 * **SkillBoardData** -  Octopath_Traveler0\Content\Local\DataBase\SkillBoard
 * **SkillID** - Octopath_Traveler0\Content\Local\DataBase\Skill
 * **GameTextSkill** - Octopath_Traveler0\Content\Local\DataBase\GameText\Localize\EN-US\SystemText
