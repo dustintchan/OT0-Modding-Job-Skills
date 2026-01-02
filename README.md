@@ -1,10 +1,12 @@
 # OT0 Editing Job Skillset Tutorial
 A guide compiling information to easily create custom skill sets for characters in Octopath 0. Includes Unpacking .pak files, .uasset into json, json to .uasset, and repacking .pak files. This guide was done with Windows OS in mind.
 
+The steps within this guide applies to the COTC OT0 mod as well. This guide will be updated when the official mod releases.
+
 **Disclaimer**: This tutorial only handles editing class skillset and extracts a simplified .pak to ease the modding process. This guide does not include class weapon changes, sprite changes, or editing the individual skills themselves. To do other types of modding for OT0, you must unpack **pakchunk0-Windows.pak** found in your *'...\Octopath_Traveler0\Octopath_Traveler0\Content\Paks'* game directory using the AES key found in the Octopath modding Discord: https://discord.gg/t43Kbrp. More details of this can be found at the bottom of this page.
 
 ## Tools Needed:
-* [repak](https://github.com/trumank/repak) (Unpacker)
+* [repak](https://github.com/trumank/repak/releases) (Unpacker)
 * [UAssetMessagePack](https://drive.google.com/file/d/1drP7k3QOLzK0cEkApgWZP1q0kj2NYdnS/view?usp=sharing) (UAsset to and from Json files) by @igoticecream
 * [UnrealPak](https://github.com/Dmgvol/UE_Modding/raw/main/Tools/UnrealPak.zip) by FluffyQuack (Repack Uassets) 
 * **SkillsUnedited_P.pak** (Provided file)
@@ -111,15 +113,11 @@ __For example__: if you want the "Almighty" buff skill (Phys atk/Phys def/Elem a
 * 2047 - Sazantos
 * 2048 - El
 * 2049 - Isla
-
-**Note**: This list is not finished and can be updated overtime. An easy way to find a missing id is to cross reference *m_CanNotEssential* data with the OT0 spreadsheet. 
-
-**For example**: Suppose Hannit is not yet listed. Hannit's *m_CanNotEssential* ("Unmasterable") True and False values follows FTFFFFF (skills), FTTT (passives), as seen in the OT0 spreadsheet. We can see in the list above Olberic's character id is 2031 and there are missing entries after him. Therefore we can infer Hannit and the original 8 occupy these spots. Search for a pattern FTFFFFF, FTTT in the JSON and we discover id 2035 matches this pattern. After repacking and loading the game, this is confirmed to be Hannit. Note that this method is not foolproof, as for example Stia and Primrose follow the same mastery pattern of FFFFFFT, FTTT and can be accidentally confused for one another.
 <br/><br/>
 
 ## Using non-character or job specific skills (Mastery Skills):
 
-This section discusses how to find the *m_SkillID* of skills not learned by any character's classes. 
+This section discusses how to find the *m_SkillID* of skills not learned by any character's classes. It can also 
 You will need **SkillBoardData.json**, **SkillID.json**, and **GameTextSkill.json** opened within your text editor. Use the OT0 spreadsheet to find the skill you desire under *Mastery Skills* tab and note its name.
 
 **For example**:  We will add the skill "Swirling Storm" (26 SP Deal wind damage to random foes 4 times) to our skillset, which is not innately learned by any character.
